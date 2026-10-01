@@ -1,0 +1,3 @@
+- [x] Build responsive client services and booking flow.
+- [x] Build responsive administrator dashboard, agenda, services, schedules, and settings.
+- [x] Verify booking and administration flows on desktop and mobile.
