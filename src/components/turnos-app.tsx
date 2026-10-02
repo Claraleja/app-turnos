@@ -26,7 +26,7 @@ const initial: Data = {
     { name: "Domingo", open: false, start: "09:00", end: "13:00" },
   ],
   appointments: [],
-  config: { name: "Soluciones Digitales Caimán", logo: "", businessWhatsApp: "", supportWhatsApp: "" },
+  config: { name: "Soluciones Digitales Caimán", logo: "", businessWhatsApp: "+5351234567", supportWhatsApp: "+5357654321" },
 };
 const dayIndex = (date: string) => { const d = new Date(`${date}T12:00:00`); return (d.getDay() + 6) % 7; };
 const dateLabel = (date: string) => new Date(`${date}T12:00:00`).toLocaleDateString("es-ES", { day: "numeric", month: "long", year: "numeric" });
