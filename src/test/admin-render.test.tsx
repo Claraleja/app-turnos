@@ -23,3 +23,11 @@ describe("admin panel", () => {
     expect(screen.queryByText("Cerrar sesión")).toBeNull();
   });
 });
+
+describe("single link", () => {
+  it("public view has a discreet link to /admin in the footer", () => {
+    render(<TurnosApp />);
+    const link = screen.getByText("Acceso del negocio") as HTMLAnchorElement;
+    expect(link.getAttribute("href")).toBe("/admin");
+  });
+});
