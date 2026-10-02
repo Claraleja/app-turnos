@@ -14,7 +14,7 @@ describe("admin panel", () => {
   });
   it("navigates to Clientes view", () => {
     render(<TurnosApp isAdmin onLogout={() => {}} />);
-    fireEvent.click(screen.getAllByText("Clientes")[0]);
+    fireEvent.click(screen.getAllByText("Clientes")[0]!);
     expect(screen.getByText("Personas que han reservado turnos en tu negocio.")).toBeTruthy();
   });
   it("public view has no admin trace", () => {
